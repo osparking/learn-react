@@ -1,12 +1,20 @@
+import "./index.css";
+
 function AppData() {
-  const appleImageURL =
-    "https://www.collinsdictionary.com" +
-    "/images/thumb/apple_158989157_250.jpg?version=6.0.84";
+  const apple = {
+    domain: "https://www.collinsdictionary.com",
+    path: "/images/thumb/apple_158989157_250.jpg?version=6.0.84",
+    desc: "원산지 강원 영월",
+  };
 
   return (
     <>
-      <h1>청송사과</h1>
-      <img src={appleImageURL} alt="한국 호랑이 - shutter stock" />
+      <div className="center">
+        <div>
+          <h1>영월 사과</h1>
+          <img src={apple.domain + apple.path} alt={"사과: " + apple.desc} />
+        </div>
+      </div>
     </>
   );
 }
