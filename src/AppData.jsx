@@ -1,22 +1,12 @@
-import { useState } from "react";
-import "./App.css";
-import { MyButton } from "./start_fast/MyButton";
-
 function AppData() {
-  const [count, setCount] = useState(0);
-  const counterLabel = "계수기 값 - ";
+  const appleImageURL =
+    "https://www.collinsdictionary.com" +
+    "/images/thumb/apple_158989157_250.jpg?version=6.0.84";
 
   return (
     <>
-      <h1>등산객 숫자</h1>
-      <div className="card redCarpet">
-        <MyButton
-          style="counterFont"
-          label={counterLabel}
-          count={count}
-          cbFunc={setCount}
-        />
-      </div>
+      <h1>청송사과</h1>
+      <img src={appleImageURL} alt="한국 호랑이 - shutter stock" />
     </>
   );
 }
