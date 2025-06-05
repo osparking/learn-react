@@ -7,9 +7,16 @@ function AppData() {
     desc: "원산지 강원 영월",
   };
 
+  const divStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+  };
+
   return (
     <>
-      <div className="center">
+      <div style={divStyle}>
         <div>
           <h1>영월 사과</h1>
           <img src={apple.domain + apple.path} alt={"사과: " + apple.desc} />
