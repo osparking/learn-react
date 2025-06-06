@@ -16,17 +16,11 @@ function App() {
     setIsAdmin(!isAdmin);
   };
 
-  if (isAdmin) {
-    content = <AdminPage />;
-  } else {
-    content = <LoginPage />;
-  }
-
   return (
     <>
       <h1>조건부 렌더링</h1>
       <h3>긴 판</h3>
-      <div>{content}</div>
+      <div>{isAdmin ? <AdminPage /> : <LoginPage />}</div>
       <button onClick={() => actLogin()}>로그인</button>
     </>
   );
