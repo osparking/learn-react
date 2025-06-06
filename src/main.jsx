@@ -1,10 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import AppData from './AppData.jsx'
-import './index.css'
+import App from './topics/App2'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppData />
+    <App />
   </StrictMode>,
 )
