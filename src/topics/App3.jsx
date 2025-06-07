@@ -1,4 +1,3 @@
-
 const App3 = () => {
   const products = [
     { name: "상추", id: 1, isPerishable: true },
@@ -6,14 +5,21 @@ const App3 = () => {
     { name: "락스", id: 3, isPerishable: false },
   ];
 
-const items = products.map((product) => (
-  <li
-    key={product.id}
-    style={{ color: product.isPerishable ? "red" : "black" }}
-  >
-    {product.name}
-  </li>
-));
+  const itemStyle = (flag) => {
+    color: flag ? "hotpink" : "black";
+  };
+
+  const style = (p) => {
+    return {
+      color: p.isPerishable ? "green" : "black",
+    };
+  };
+
+  const items = products.map((product) => (
+    <li key={product.id} style={style(product)}>
+      {product.name}
+    </li>
+  ));
 
   return (
     <>
