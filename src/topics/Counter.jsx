@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "../index.css"
 
-const Counter = () => {
+const Counter = (param) => {
   const [count, setCount] = useState(0);
   function oneManEntered() {
     setCount(count + 1);
@@ -8,9 +9,8 @@ const Counter = () => {
 
   return (
     <>
-      <div>신명 입장객 수</div>
-      <button onClick={oneManEntered}>입장</button>
-      <p>입장객 수: {count}</p>
+      <button onClick={oneManEntered}>{param.action}</button>
+      <p>{param.label}: {count}</p>
     </>
   );
 };
