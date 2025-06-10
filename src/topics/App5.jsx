@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Door from "./Door";
+import "../index.css";
 
 const App5 = () => {
   const [count, setCount] = useState(0);
@@ -11,10 +11,10 @@ const App5 = () => {
       <div>
         <div className="center h50">CGV - 제 1 관</div>
         <div className="center h50">
-          <Door title="입구1" handler={oneManEntered} />
+          <button onClick={oneManEntered}>입구1</button>
         </div>
         <div className="center h50">
-          <Door title="입구2" handler={oneManEntered} />
+          <button onClick={oneManEntered}>입구2</button>
         </div>
         <p className="center">{count}</p>
       </div>
