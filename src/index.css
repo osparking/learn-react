@@ -1,14 +1,22 @@
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.hWhole {
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h50 {
+  height: 50px;
 }
 
 h1 {
   text-align: center;
 }
 
-p, button {
+p,
+button {
   display: inline;
 }
